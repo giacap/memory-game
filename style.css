@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.heading{
+    font-size: 35px;
+}
+
+
+.container{
+    height: 100vh;
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.memory-game{
+    width: 600px;
+    height: 450px;
+    background-color: lightcoral;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.memory-game span{
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    background-color: grey;
+    cursor: pointer;
+}
+
+
+
+.reset-btn{
+    background-color: transparent;
+    padding: 10px;
+    font-size: 25px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 660px){
+
+    .memory-game{
+        width: 400px;
+        height: 300px;
+    }
+
+    .memory-game span{
+        width: 100px;
+        height: 100px;
+    }
+
+    .heading{
+        font-size: 30px;
+    }
+
+    .reset-btn{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+@media (max-width: 450px){
+
+    .memory-game{
+        width: 300px;
+        height: 225px;
+    }
+
+    .memory-game span{
+        width: 75px;
+        height: 75px;
+    }
+
+    .heading{
+        font-size: 25px;
+    }
+
+    .reset-btn{
+        font-size: 15px;
+    }
+}
+
+
+
+
+@media (max-width: 350px){
+
+    .memory-game{
+        width: 200px;
+        height: 150px;
+    }
+
+    .memory-game span{
+        width: 50px;
+        height: 50px;
+    }
+
+    .heading{
+        font-size: 20px;
+    }
+
+    .reset-btn{
+        font-size: 10px;
+    }
+}
+
+
+
+@media (max-height: 600px){
+    .container{
+        min-height: 700px;    /* 600px */
+    }
+}
+
+
+
+
+
+
+@media (min-width: 1600px){
+    .heading{
+        font-size: 50px;
+    }
+
+    .reset-btn{
+        font-size: 37px;
+    }
+}
